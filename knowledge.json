@@ -1,0 +1,36 @@
+{
+"intro": "Your journey begins in Jinzhou. You are an independent detective entering a world filled with mysteries, unfamiliar faces, and opportunities. Explore, investigate, earn Echo Credits, meet new people, and discover what this world has waiting for you.",
+"universe": "The WuWa bot is a Wuthering Waves roleplay and detective game on Discord. Type !wuwa in a server to open a detective file and a private game room in Jinzhou. You start as a Rookie Detective with 500 Echo Credits.",
+"start": ["Type !wuwa in a Discord server where the bot is present. It creates your detective file and a private room named jinzhou-<your name>.", "Use !profile to see your file and !help to browse every command.", "Earn Echo Credits with !daily and !work."],
+"features": [
+ {"t": "Getting started", "items": [["!wuwa", "Create your detective file and private game room in Jinzhou, or return to your existing room."], ["!help / /help", "Browse every command by category."]]},
+ {"t": "Player", "items": [["!profile / /profile", "Your detective file: rank, Echo Credits, location, completed cases, total journeys, join date and recruited characters."]]},
+ {"t": "Economy", "items": [["!economy", "Overview of earning and economy commands."], ["!balance (!bal)", "Wallet, bank and total wealth."], ["!bank", "Bank card with Deposit all / Withdraw all buttons."], ["!deposit <amount|all> (!dep)", "Move credits from wallet to bank."], ["!withdraw <amount|all>", "Move credits from bank to wallet."], ["!pay @user <amount|all>", "Send credits to another detective who has a file."], ["!daily", "Collect 100 EC once every 24 hours."], ["!richest (!lb)", "Top 10 leaderboard by wallet + bank, plus your rank."]]},
+ {"t": "Detective", "items": [["!work [abandon]", "Open an AI-written detective case (30-minute cooldown). `abandon` drops your open case with no reward."], ["!answer <text>", "Answer your open case, same as the Submit Answer button."]]},
+ {"t": "Roleplay chat", "items": [["@bot start [names]", "Characters start chatting in the channel. Owner only."], ["@bot stop / cast / topic / clear", "Pause, change the cast, set a topic, or clear chat history. Owner only."], ["@bot who / @bot help", "Show the cast and available characters, or help."]]},
+ {"t": "Owner tools", "items": [["/wuwa, /wuwa_remove", "Create, update or delete a roleplay character. Owner only."], ["/status", "Change the bot's status and rich presence. Owner only."], ["@bot sync, @bot id <command>", "Re-sync slash commands; look up a slash command ID. Owner only."]]}
+],
+"economy": {
+ "text": "Echo Credits (EC) are the currency of Jinzhou. Your wallet is what you spend and send; your bank is stored separately. Both count toward your total wealth on the leaderboard.",
+ "earn": ["Starting balance: 500 EC when you open your detective file.", "!daily: 100 EC every 24 hours.", "!work: solve a detective case. Easy 80 EC, Medium 120 EC, Hard 180 EC."],
+ "spend": ["!pay sends EC to another detective.", "No shop or item purchases are implemented yet."]
+},
+"detective": {
+ "text": "Each !work case is written by AI: a setup, suspect statements and evidence. Name who is lying and the detail that gives them away.",
+ "rules": ["Difficulties: Easy, Medium, Hard (rewards 80 / 120 / 180 EC).", "You get 3 attempts per case. A wrong answer tells you how many are left.", "Use the Submit Answer button or !answer <text>.", "30-minute cooldown between new cases.", "An unanswered case expires after 24 hours with no reward.", "A failed case pays nothing."]
+},
+"locations": [["Jinzhou", "The port city where every detective's story begins. It is the only location implemented so far."]],
+"characters": [
+ ["Rover", "The Resonator who woke up with no memories. Laid-back, curious, dry sense of humor."],
+ ["Yinlin", "Playful, dramatic, mischievous puppeteer-type who loves teasing people."],
+ ["Jinhsi", "Calm, dignified and graceful magistrate with a quiet, teasing wit."],
+ ["Changli", "Composed, sharp strategist with a sly smile."],
+ ["Camellya", "Sweet-sounding but unsettling; obsessive and dramatic about love and flowers."],
+ ["Carlotta", "Elegant, confident noble with a sharp tongue and a flair for fashion."],
+ ["Shorekeeper", "Gentle, soft-spoken and caring, sometimes a bit mysterious."],
+ ["Xiangli Yao", "Stern, formal and disciplined, with dry humor."]
+],
+"characters_note": "These characters chat with each other and with you in roleplay channels. They are not playable. Your profile has a recruited-characters field, but no recruiting command exists yet.",
+"about": "vT Official builds the WuWa Discord bot and this website.",
+"not_implemented": ["Travel between locations", "Shop", "Recruiting characters", "Locations other than Jinzhou"]
+}
